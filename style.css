@@ -397,3 +397,46 @@ footer {
     backdrop-filter: none;
     margin-top: 0;
 }
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Reduce hero padding to allow content to sit higher */
+    .hero {
+        padding-top: 70px;
+    }
+
+    /* Expand content width and tighten padding */
+    .hero-content {
+        width: 92%;
+        margin-top: 2vh; /* Moves the box closer to the top */
+        padding: 25px 15px;
+    }
+
+    /* Scale the hero logo for smaller screens */
+    .hero-overlay-img {
+        max-width: 160px;
+        margin-bottom: 15px;
+    }
+
+    /* Typography adjustments for mobile readability */
+    h1 {
+        font-size: 1.8rem; /* Prevents long words from breaking or over-stacking */
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Stack buttons for better thumb-reach and layout */
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cta-button, .cta-secondary {
+        width: 100%; /* Full-width buttons are easier to tap on mobile */
+        text-align: center;
+    }
+}
