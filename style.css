@@ -440,3 +440,54 @@ footer {
         text-align: center;
     }
 }
+
+/* Specialized Support for Small & Legacy Devices */
+@media (max-width: 480px) {
+    .hero {
+        height: auto; /* Overrides fixed 100vh */
+        min-height: 100vh; /* Ensures it still covers the screen */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 15px 40px 15px; /* Added bottom padding for breathing room */
+        overflow: visible; /* Prevents truncation of long content */
+    }
+
+    .hero-content {
+        width: 100%; /* Utilize full width on narrow devices */
+        margin-top: 0; /* Resetting margin for better centering */
+        padding: 20px 15px; /* Drastically reduced padding for more text space */
+        background: rgba(0, 0, 0, 0.6); /* Slightly darker for better legibility */
+    }
+
+    .hero-overlay-img {
+        max-width: 140px; /* Scaled down further for older screens */
+        margin-bottom: 15px;
+    }
+
+    /* Typography scaling for narrow viewports */
+    h1 {
+        font-size: 1.6rem; /* Prevents title from taking up too much vertical space */
+        line-height: 1.1;
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Stacked buttons for easier thumb-interaction */
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .cta-button, .cta-secondary {
+        width: 100%;
+        padding: 12px 20px; /* Slightly smaller buttons for narrow screens */
+        font-size: 0.9rem;
+    }
+}
