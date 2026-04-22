@@ -306,3 +306,94 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* Navigation Updates */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.nav-item:hover { opacity: 0.7; }
+
+/* Feature Section (New) */
+.features {
+    background-color: #0a0a0a;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cta-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid var(--text-main);
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background: var(--text-main);
+    color: var(--bg-color);
+}
+
+/* Gallery Specific */
+.gallery-hero {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .hero-btns { flex-direction: column; }
+    .nav-links { display: none; } /* Consider a burger menu later */
+}
+
+/* Gallery Specific */
+.gallery-hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140px; /* Overrides the previous 150px for a tighter look */
+    padding-bottom: 40px;
+}
+
+/* New class: This won't affect your homepage logo */
+.gallery-header-logo {
+    max-width: 400px; 
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto; 
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* Scoped selector: Only removes background blur on the Gallery page */
+.gallery-hero .hero-content {
+    background: transparent;
+    backdrop-filter: none;
+    margin-top: 0;
+}
