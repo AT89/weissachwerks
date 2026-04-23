@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 text-sm text-white">
         <Link href="/" className="flex items-center gap-3">
-          <img src="/img/Weissach Werks Logo.jpg" alt="Weissach Werks Logo" className="h-12 w-auto rounded-lg ring-1 ring-white/10" />
+          <img src="/img/Weissach Werks Logo.webp" alt="Weissach Werks Logo" className="h-12 w-auto rounded-lg ring-1 ring-white/10" />
           <div className="hidden sm:block">
             <p className="font-semibold uppercase tracking-[0.25em]">Weissach Werks</p>
             <p className="text-xs text-white/70">High-performance web & AI</p>

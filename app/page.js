@@ -6,14 +6,14 @@ export default function HomePage() {
     <main className="text-white">
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden bg-slate-950 pt-24 flex flex-col items-start justify-center">
-        <video autoPlay loop muted playsInline preload="auto" poster="/img/seo.jpg" className="pointer-events-none absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto max-w-[100vw] -translate-x-1/2 -translate-y-1/2 object-cover brightness-[0.2]">
+        <video autoPlay loop muted playsInline preload="auto" poster="/img/seo.webp" className="pointer-events-none absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto max-w-[100vw] -translate-x-1/2 -translate-y-1/2 object-cover brightness-[0.2]">
           <source src="/img/cgt.mp4" type="video/mp4" />
           Your browser does not support HTML video.
         </video>
 
         <div className="relative z-10 mx-auto flex h-screen max-w-7xl flex-col justify-center px-6 sm:px-8">
         <div className="">
-          <img src="/img/WW logo transparent bg HD.png" alt="Weissach Werks" className="mx-auto mb-8 h-64 w-auto" />
+          <img src="/img/WW logo transparent bg HD.webp" alt="Weissach Werks" className="mx-auto mb-8 h-64 w-auto" />
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-6xl">High-Performance Digital Engineering</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">We build SEO-driven, mobile-first web systems integrated with custom CRM databases and autonomous AI agents for 24/7 scheduling.</p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">

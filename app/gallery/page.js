@@ -3,58 +3,58 @@ import { ImageIcon } from 'lucide-react';
 
 const frontBackItems = [
   {
-    front: '/img/CGT-dahlias-front.jpg',
-    rear: '/img/CGT-dahlias-rear.jpg',
+    front: '/img/CGT-dahlias-front.webp',
+    rear: '/img/CGT-dahlias-rear.webp',
     title: 'CGT "Dahlia" Series'
   },
   {
-    front: '/img/Red Roses F40.jpeg',
-    rear: '/img/Red Roses F40 rear.jpeg',
+    front: '/img/Red Roses F40.webp',
+    rear: '/img/Red Roses F40 rear.webp',
     title: 'F40 "Red Rose" Edition'
   },
   {
-    front: '/img/MC20 Arabella.jpg',
-    rear: '/img/MC20 rear Arabella.jpg',
+    front: '/img/MC20 Arabella.webp',
+    rear: '/img/MC20 rear Arabella.webp',
     title: 'MC20 "Arabella" Concept'
   },
   {
-    front: '/img/White Roses 918.jpeg',
-    rear: '/img/White Roses 918 rear.jpeg',
+    front: '/img/White Roses 918.webp',
+    rear: '/img/White Roses 918 rear.webp',
     title: '918 Spyder "White Rose"'
   },
   {
-    front: '/img/R34 HYDRANGEA.jpeg',
-    rear: '/img/R34 HYDRANGEA rear.jpeg',
+    front: '/img/R34 HYDRANGEA.webp',
+    rear: '/img/R34 HYDRANGEA rear.webp',
     title: 'R34 "Hydrangea" Variant'
   },
   {
-    front: '/img/SALVIA Supra MK4.jpeg',
-    rear: '/img/SALVIA Supra MK4 rear.jpeg',
+    front: '/img/SALVIA Supra MK4.webp',
+    rear: '/img/SALVIA Supra MK4 rear.webp',
     title: 'MK4 Supra "Salvia"'
   },
   {
-    front: '/img/sunflower x lfa.jpeg',
-    rear: '/img/sunflower x lfa rear.jpeg',
+    front: '/img/sunflower x lfa.webp',
+    rear: '/img/sunflower x lfa rear.webp',
     title: 'LFA "Sunflower" Concept'
   },
   {
-    front: '/img/fuschia x ford gt.jpeg',
-    rear: '/img/fuschia x ford gt rear.jpeg',
+    front: '/img/fuschia x ford gt.webp',
+    rear: '/img/fuschia x ford gt rear.webp',
     title: 'Ford GT "Fuschia" Edition'
   },
   {
-    front: '/img/evija x lotus.jpeg',
-    rear: '/img/evija x lotus rear.jpeg',
+    front: '/img/evija x lotus.webp',
+    rear: '/img/evija x lotus rear.webp',
     title: 'Lotus Evija Concept'
   }
 ];
 
 const creativeItems = [
-  '/img/audrey 993 far.jpeg',
-  '/img/zr1.jpeg',
-  '/img/taqueria.jpeg',
-  '/img/taylorswift 964.jpg',
-  '/img/steve mcqueen.jpg'
+  '/img/audrey 993 far.webp',
+  '/img/zr1.webp',
+  '/img/taqueria.webp',
+  '/img/taylorswift 964.webp',
+  '/img/steve mcqueen.webp'
 ];
 
 export default function GalleryPage() {

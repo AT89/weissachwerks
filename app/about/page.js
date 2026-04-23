@@ -26,7 +26,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex items-center justify-center rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20">
-            <img src="/img/WW logo transparent bg HD.png" alt="Weissach Werks" className="w-full max-w-sm rounded-[1.5rem] object-contain" />
+            <img src="/img/WW logo transparent bg HD.webp" alt="Weissach Werks" className="w-full max-w-sm rounded-[1.5rem] object-contain" />
           </div>
         </div>
       </section>
