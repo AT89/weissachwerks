@@ -63,7 +63,7 @@ export default function GalleryPage() {
       <section className="mx-auto max-w-6xl space-y-12 px-6 pb-20 sm:px-8">
         <div className="rounded-[2rem] border border-white/10 bg-black/70 p-10 shadow-2xl shadow-black/30 backdrop-blur-xl">
           <div className="flex flex-col items-center gap-4 text-center">
-            <img src="/img/WW logo transparent bg HD.png" alt="Weissach Werks Logo" className="h-64 w-auto" />
+            <img src="/img/WW logo transparent bg HD.webp" alt="Weissach Werks Logo" className="h-64 w-auto" />
             <h1 className="text-4xl font-semibold">The Creative Lab</h1>
             <p className="max-w-2xl text-slate-300">From AI-generated automotive concepts to market-ready apparel prototypes. Personalized logo or refactor in SVG, EPS, PDF formats</p>
           </div>
