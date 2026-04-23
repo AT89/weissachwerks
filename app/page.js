@@ -6,7 +6,7 @@ export default function HomePage() {
     <main className="text-white">
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden bg-slate-950 pt-24 flex flex-col items-start justify-center">
-        <video autoPlay loop muted playsInline preload="auto" poster="/img/seo.webp" className="pointer-events-none absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto max-w-[100vw] -translate-x-1/2 -translate-y-1/2 object-cover brightness-[0.2]">
+        <video autoPlay loop muted playsInline preload="auto" className="pointer-events-none absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto max-w-[100vw] -translate-x-1/2 -translate-y-1/2 object-cover brightness-[0.2]">
           <source src="/img/cgt.mp4" type="video/mp4" />
           Your browser does not support HTML video.
         </video>
