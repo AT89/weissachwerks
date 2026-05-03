@@ -1,111 +1,62 @@
 import Link from 'next/link';
-import { ImageIcon } from 'lucide-react';
 
-const frontBackItems = [
+const galleryPages = [
   {
-    front: '/img/CGT-dahlias-front.webp',
-    rear: '/img/CGT-dahlias-rear.webp',
-    title: 'CGT "Dahlia" Series'
+    href: '/gallery/flowers',
+    title: 'Flowers',
+    description: 'All floral automotive concepts and front/back series moved into a dedicated page.'
   },
   {
-    front: '/img/Red Roses F40.webp',
-    rear: '/img/Red Roses F40 rear.webp',
-    title: 'F40 "Red Rose" Edition'
+    href: '/gallery/misc',
+    title: 'Misc',
+    description: 'Lifestyle shots, art direction, and supplemental studio visuals from the Weissach collection.'
   },
   {
-    front: '/img/MC20 Arabella.webp',
-    rear: '/img/MC20 rear Arabella.webp',
-    title: 'MC20 "Arabella" Concept'
-  },
-  {
-    front: '/img/White Roses 918.webp',
-    rear: '/img/White Roses 918 rear.webp',
-    title: '918 Spyder "White Rose"'
-  },
-  {
-    front: '/img/R34 HYDRANGEA.webp',
-    rear: '/img/R34 HYDRANGEA rear.webp',
-    title: 'R34 "Hydrangea" Variant'
-  },
-  {
-    front: '/img/SALVIA Supra MK4.webp',
-    rear: '/img/SALVIA Supra MK4 rear.webp',
-    title: 'MK4 Supra "Salvia"'
-  },
-  {
-    front: '/img/sunflower x lfa.webp',
-    rear: '/img/sunflower x lfa rear.webp',
-    title: 'LFA "Sunflower" Concept'
-  },
-  {
-    front: '/img/fuschia x ford gt.webp',
-    rear: '/img/fuschia x ford gt rear.webp',
-    title: 'Ford GT "Fuschia" Edition'
-  },
-  {
-    front: '/img/evija x lotus.webp',
-    rear: '/img/evija x lotus rear.webp',
-    title: 'Lotus Evija Concept'
+    href: '/gallery/xi',
+    title: 'Xi',
+    description: 'Video showcase of the Gundam Model Kit HGUC Xi project, created using AI video generation.'
   }
-];
-
-const creativeItems = [
-  '/img/audrey 993 far.webp',
-  '/img/zr1.webp',
-  '/img/taqueria.webp',
-  '/img/taylorswift 964.webp',
-  '/img/steve mcqueen.webp'
 ];
 
 export default function GalleryPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white pt-28">
-      <section className="mx-auto max-w-6xl space-y-12 px-6 pb-20 sm:px-8">
+      <section className="mx-auto max-w-6xl space-y-10 px-6 pb-20 sm:px-8">
         <div className="rounded-[2rem] border border-white/10 bg-black/70 p-10 shadow-2xl shadow-black/30 backdrop-blur-xl">
           <div className="flex flex-col items-center gap-4 text-center">
             <img src="/img/WW logo transparent bg HD.webp" alt="Weissach Werks Logo" className="h-64 w-auto" />
-            <h1 className="text-4xl font-semibold">The Creative Lab</h1>
-            <p className="max-w-2xl text-slate-300">From AI-generated automotive concepts to market-ready apparel prototypes. Personalized logo or refactor in SVG, EPS, PDF formats</p>
+            <h1 className="text-4xl font-semibold">Gallery Index</h1>
+            <p className="max-w-2xl text-slate-300">Browse the Gallery by section. Flowers, Misc, and Xi each now have their own dedicated page.</p>
           </div>
         </div>
 
-        <div className="space-y-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold">The Front/Back Collection</h2>
-            <p className="text-slate-300">Symmetrical branding paired with high-impact surrealism.</p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {frontBackItems.map((item, index) => (
-              <div key={index} className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/60 shadow-xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-white/10">
-                <div className="relative aspect-square">
-                  <img src={item.front} alt={`${item.title} Front`} className="absolute inset-0 h-full w-full object-cover transition-opacity duration-300 hover:opacity-0" />
-                  <img src={item.rear} alt={`${item.title} Rear`} className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 hover:opacity-100" />
+        <div className="grid gap-6 md:grid-cols-3">
+          {galleryPages.map((page) => (
+            <Link
+              key={page.href}
+              href={page.href}
+              className="group rounded-[2rem] border border-white/10 bg-black/60 p-8 text-left transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">{page.title}</h2>
+                  <p className="mt-3 text-sm text-slate-300">{page.description}</p>
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                </div>
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-white transition group-hover:bg-white/10">→</span>
               </div>
-            ))}
-          </div>
+            </Link>
+          ))}
         </div>
 
-        <div className="space-y-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold">Lifestyle & Art</h2>
+        <div className="rounded-[2rem] border border-white/10 bg-black/60 p-8 shadow-xl shadow-black/20 backdrop-blur-xl">
+          <h2 className="text-2xl font-semibold">Xi Video Preview</h2>
+          <p className="mt-3 text-slate-300">This video was created using a Gundam Model Kit HGUC Xi that was finished and decaled (by me) and then input into a video AI generator.</p>
+          <div className="mt-6 overflow-hidden rounded-[2rem] bg-slate-950/80">
+            <video controls className="w-full">
+              <source src="/img/Xi.mp4" type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
           </div>
-
-          <div className="columns-1 gap-6 space-y-6 md:columns-2 lg:columns-3">
-            {creativeItems.map((src, index) => (
-              <div key={index} className="break-inside-avoid overflow-hidden rounded-[2rem] border border-white/10 bg-black/60 shadow-xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-white/10">
-                <img src={src} alt={`Creative item ${index + 1}`} className="w-full object-cover" />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="text-center">
-          <Link href="/" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Return to Agency</Link>
         </div>
       </section>
     </main>
